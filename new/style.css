@@ -1,4 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+body, html {
+	height: 100%;
+  }
+  
+  .bg { 
+	/* The image used */
+	background-image: url('./img/00008.jpg');
+  
+	/* Full height */
+	height: 100%; 
+  
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
   margin: 0;
@@ -30,11 +47,15 @@ header, main, footer {
 }
 
 header {
+
   padding: 2em;
   text-align: center;
-  background-image: url('./img/versuchsaufbau.png');
+  background-image: url('./img/greece.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: fixed;
+
   color: white;
 }
 
@@ -184,6 +205,15 @@ footer {
     text-align: center;
   }
 }
+
+
+
+::-webkit-scrollbar { 
+  display: none;  // Safari and Chrome
+  -ms-overflow-style: none;  // IE 10+
+  scrollbar-width: none;  // Firefox
+}
+
 
 .timeline {
   list-style: none;

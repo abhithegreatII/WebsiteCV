@@ -2,12 +2,9 @@
 <html>
 <head>
 
-<link href="css/bootstrap.css" rel="stylesheet">
-
   <meta charset="UTF-8">
   <title>CV - Abhi</title>
   <meta name="description" content="simple CV example created with HTML and CSS">
-  <meta name="author" content="Fly Nerd">
   <link rel="icon" href="./img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -15,12 +12,19 @@
   <link rel = "stylesheet"
     type = "text/css"
     href = "style.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <div class="scrollbar" id="style-1">
+    <div class="force-overflow"></div>
+  </div>
   <header>
-    <div>
-      <img src="./img/versuchsaufbau.png" />
-    </div>
+
     <h1>Abhishek Singh</h1>
     <section>
       <p>Hello! I am Abhishek Singh. This is me getting my hands into Web- Design.</p>
@@ -28,55 +32,168 @@
         <i class="fab fa-github-alt"></i>
       </a>
       <a href="https://www.linkedin.com/in/abhisheksb/" target="_blank">
-        <i class="far fa-chart-bar"></i>
+        <i class="fab fa-linkedin-in"></i>
       </a>
       <a href= "umfrage.html" target="_blank">
-        <i class= "far fa-chart-bar"></i>
+        <i class= "fab fa-facebook-f"></i>
       </a>
     </section>
+
   </header>
-  <main>      
+  <main>
+      <section>
+          <h3>Education</h3>
+          <article>
+            <div class='school'>
+              <strong>Technical University of Berlin</strong>
+            </div>
+            <div class="descrition">
+              Bachelor Degree of Computational Engineering Sciences
+            </div>
+          </article>
+          <article>
+            <div class='school'>
+              <strong>Nelson Mandela School Berlin</strong>
+            </div>
+            <div>
+              International Baccaleureate Degree
+            </div>
+          </article>
+      </section>
+      <section>
+          <h3>Programming Projects</h3>
+          <article class='course'>
+            <div class='title'>
+              <h4>Case Study: Product Recall</h4>
+            </div>
+            <div class="descrition">
+              <p>Given was dirty data of components, individual parts and location of faulty vehicles from a car company. The data
+                was cleaned, analyzed and then visualized via a shiny.js application.
+              </p>
+            </div>
+          </article>
+          <article class='course'>
+            <div class='title'>
+              <h4>self- balancing Binary Tree</h4>
+            </div>
+            <div class="descrition">
+              <p>A splay tree, was visualized where nodes could be inserted, deleted and searched for. After any operation, the tree would balanced with according rotations of sub-trees and was vizualized via Tkinter GUI.</p>
+            </div>
+          </article>
+          <article class='course'>
+            <div class='title'>
+              <h4>Case Study: Reliability Engineering</h4>
+            </div>
+            <div class="descrition">
+              <p>Using a robotic-arm, various materials were tested, and data was collected. From here, the data was used to predict the probability of failure of untested materials with the use of regression curves.</p>
+            </div>
+          </article>
+          <article class='course'>
+            <div class='title'>
+              <h4>Labyrinth: Shortest Path</h4>
+            </div>
+            <div class="descrition">
+              <p>Find the fastest route from any point in the labyrinth to another. Used the method of Breath First Search to find all possible routes and their according distances.  </p>
+            </div>
+          </article>
+        </section>
+    <section> 
       <div class="container">
           <div class="page-header">
-              <h1 id="timeline">Curriculum Vitae</h1>
+              <h3>Milestones</h3>
           </div>
           <ul class="timeline">
-              <li>
-                <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+
+              <li class="timeline-inverted">
+                  <!--  <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>  -->
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">2019</h4>
+                      
+                    </div>
+                    <div class="timeline-body">
+                      <p>Volunteer for Event Organization at the WeAreDevelopers World Congress in Berlin</p>
+                      <hr>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                          <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="./img/Recommendation_Letter.pdf">Recommendation Letter</a></li>
+                          <!-- <li><a href="#">Another action</a></li> -->
+                          <!-- <li><a href="#">Something else here</a></li> -->
+                          <!-- <li class="divider"></li> -->
+                          <!-- <li><a href="#">Separated link</a></li> -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+              </li>
+
+
+
+              <li class="timeline-inverted">
+                <!--  <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>  -->
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4 class="timeline-title">2018</h4>
-                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                    
                   </div>
                   <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    <p>Founder of Online- Shop | gapochi.de</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">2016</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> current</small></p>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Computational Engineering Sciences at the </p>
+                    <p>Technical University of Berlin</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
-                <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                  <!--  <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>  -->
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title"> </h4>
+                      
+                    </div>
+                    <div class="timeline-body">
+                      <p>Mathematics, Physics, Economics, German, </p>
+                      <p>English, Chemistry, Theory of Knowledge</p>
+                    </div>
                   </div>
-                  <div class="timeline-body">
-                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                    <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. Interagi no mé, cursus quis, vehicula ac nisi. Aenean vel dui dui. Nullam leo erat, aliquet quis tempus a, posuere ut mi. Ut scelerisque neque et turpis posuere pulvinar pellentesque nibh ullamcorper. Pharetra in mattis molestie, volutpat elementum justo. Aenean ut ante turpis. Pellentesque laoreet mé vel lectus scelerisque interdum cursus velit auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac mauris lectus, non scelerisque augue. Aenean justo massa.</p>
-                  </div>
-                </div>
-              </li>
+                </li>
               <li>
                 <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="timeline-title">2003</h4>
+                    <h4 class="timeline-title">2014</h4>
                   </div>
                   <div class="timeline-body">
-                    <p>Nelson Mandela Primary and Secondary School Berlin.</p>
+                    <p>International Baccaleureate Diploma at the </p>
+                    <p>Nelson Mandela School, Berlin</p>
                   </div>
                 </div>
               </li>
               <li class="timeline-inverted">
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">2014</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Social Internship | Kita “Kleckerbande”, PeWoBe</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <!--<div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div> -->
                 <div class="timeline-panel">
                   <div class="timeline-heading">
                     <h4 class="timeline-title">2013</h4>
@@ -86,438 +203,48 @@
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">2014</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>International Baccaleureate Diploma at the Nelson Mandela School, Berlin </p>
-                    <hr>
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4 class="timeline-title">2016</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p>Computational Engineering Sciences at the Technical University of Berlin</p>
-                  </div>
-                </div>
-              </li>
               <li class="timeline-inverted">
-                <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
                 <div class="timeline-panel">
                   <div class="timeline-heading">
-                    <h4 class="timeline-title">2018</h4>
+                    <h4 class="timeline-title">2010</h4>
                   </div>
                   <div class="timeline-body">
-                    <p>Founder of Online- Shop | gapochi.de</p>
+                    <p> Work for Peace at the Young African Art Market</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-badge"><i class="glyphicon glyphicon-thumbs-up"></i></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">2003</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Nelson Mandela Primary and
+                        Secondary School Berlin</p>
                   </div>
                 </div>
               </li>
           </ul>
       </div>
-      <!--/  Skills  /-->
-  <section id="skills" class="skills-section section-padding">
-      <div class="container">
-        <h2 class="section-title wow">Skills</h2>
-  
-        <div class="skill-chart text-center">
-          <h3>Technical</h3>
-        </div>
-  
-        <div class="row">
-  
-          <div class="col-md-6">
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                  <i class="fa fa-2x fa-fw fa-hashtag"></i>
-                  <span>Bash scripting</span>
-                </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
-                  <span>79%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fas fa-2x fa-fw fa-database fa-mysql"></i>
-                <span>MySQL</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100">
-                  <span>76%</span>
-                </div>
-              </div><!--/ /.progress /-->
-            </div><!--/ /.skill-progress /-->
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-js"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
-                  <span>84%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-css3-alt"></i>
-                <span>CSS3</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100">
-                  <span>59%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-html5"></i>
-                <span>HTML5</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100">
-                  <span>73%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-laravel"></i>
-                <span>Laravel</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
-                  <span>67%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fas fa-2x fa-fw fa-check fa-shopify"></i>
-                <span>Shopify API</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100">
-                  <span>61%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-steam"></i>
-                <span>Steam API</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100">
-                  <span>52%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-microsoft"></i>
-                <span>Azure</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">
-                  <span>39%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fas fa-2x fa-fw fa-check fa-prestashop"></i>
-                <span>Prestashop</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">
-                  <span>44%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fas fa-2x fa-fw fa-check fa-redis"></i>
-                <span>Redis</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">
-                  <span>66%</span>
-                </div>
-              </div>
-            </div>
-  
-          </div><!--/ /.col-md-6 /-->
-  
-          <div class="col-md-6">
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fa fa-2x fa-fw fa-database fa-mongodb"></i>
-                <span>MongoDB</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
-                  <span>72%</span>
-                </div>
-              </div><!--/ /.progress /-->
-            </div><!--/ /.skill-progress /-->
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fas fa-2x fa-fw fa-check fa-perl"></i>
-                <span>Perl</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100">
-                  <span>38%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-node-js"></i>
-                <span>Node.js</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <span>88%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-php"></i>
-                <span>PHP</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
-                  <span>68%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-magento"></i>
-                <span>Magento</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-js"></i>
-                <span>jQuery</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                  <span>90%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-facebook"></i>
-                <span>Facebook API</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100">
-                  <span>71%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-aws"></i>
-                <span>Amazon Cloud</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                  <span>45%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-microsoft"></i>
-                <span>CosmosDB</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
-                  <span>87%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fab fa-2x fa-fw fa-docker"></i>
-                <span>Docker</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="61" aria-valuemin="0" aria-valuemax="100">
-                  <span>61%</span>
-                </div>
-              </div>
-            </div>
-  
-            <div class="skill-progress">
-              <div class="skill-title">
-                <i class="fas fa-2x fa-fw fa-check fa-rabbit"></i>
-                <span>RabbitMQ</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100">
-                  <span>74%</span>
-                </div>
-              </div>
-            </div>
-  
-          </div><!--/ /.col-md-6 /-->
-  
-        </div><!--/ /.row /-->
-  
-        <div class="skill-chart text-center">
-          <h3>Emotional</h3>
-        </div>
-  
-        <div class="row more-skill text-center">
-  
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="chart" data-percent="93" data-color="e74c3c">
-              <span class="percent"></span>
-              <div class="chart-text">
-                <span>Communication</span>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="chart" data-percent="54" data-color="2ecc71">
-              <span class="percent"></span>
-              <div class="chart-text">
-                <span>Creativity</span>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="chart" data-percent="82" data-color="3498db">
-              <span class="percent"></span>
-              <div class="chart-text">
-                <span>Leadership</span>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="chart" data-percent="95" data-color="3498db">
-              <span class="percent"></span>
-              <div class="chart-text">
-                <span>Problem Solving</span>
-              </div>
-            </div>
-          </div>
-  
-        </div>
-  
-      </div><!--/ /.container /-->
-    </section><!--/ End Skills Section /-->
-    <section>
-      <h3>Courses & Workshops</h3>
-      <article class='course'>
-        <div class='title'>
-          <h4>Udacity: Intro to HTML and CSS</h4>
-        </div>
-        <div class="descrition">
-          <p>Build styled, well-structured websites. Learn how to use HTML5 standard to create websites. Understand CSS syntax, selectors, and units. Learn about code editors and a browser's Developer Tools.</p>
-        </div>
-      </article>
-      <article class='course'>
-        <div class='title'>
-          <h4>Udemy: The Web Developer Bootcamp</h4>
-        </div>
-        <div class="descrition">
-          <p>Learn how to create full-stack web applications from scratch using HTML, CSS, JavaScript, jQuery, VanillaJS, NodeJS, MongoDB.</p>
-        </div>
-      </article>
-      <article class='course'>
-        <div class='title'>
-          <h4>EdX: Web Programming with JavaScript</h4>
-        </div>
-        <div class="descrition">
-          <p>Learn how to create web apps and prototypes with JavaScript, represent and exchange data using JavaScript Object Notation (JSON), and how to access RESTful APIs on the web.</p>
-        </div>
-      </article>
-      <article class='course'>
-        <div class='title'>
-          <h4>Django Girls: 2-Day Workshops</h4>
-        </div>
-        <div class="descrition">
-          <p>Learn back-end development with simple blog application using Django  framework.</p>
-        </div>
-      </article>
-    </section>
+    </section>    
+
     <section>
       <h3>Skills</h3>
+      <hr>
       <div class='skills'>
         <div class='column'>
-          <h4>Good knowledge</h4>
+          <h4>Programming</h4>
           <ul>
             <li>Python</li>
             <li>R Programming</li>
             <li>SQL</li>
-          </ul>
-        </div>
-        <div class='column'>
-          <h4>Basic knowledge</h4>
-          <ul>
-            <li>javascript</li>
+            <li>HTML/ CSS</li>
             <li>matlab</li>
           </ul>
         </div>
-        <div>
+
+        <div class ="column">
           <h4>Languages</h4>
           <p>🇬🇧 English - Proficient C1/C2</p>
           <p>🇫🇷 German - Proficient C1/C2</p>
@@ -527,26 +254,8 @@
       </div>
     </section>
 
-    <section>
-      <h3>Education</h3>
-      <article>
-        <div class='school'>
-          <span>2016-2019</span> <strong>Technical University of Berlin</strong>
-        </div>
-        <div class="descrition">
-          Bechelor Degree of Computational Engineering Sciences
-        </div>
-      </article>
-      <article>
-        <div class='school'>
-          <span>2014-2016</span> <strong>Nelson Mandela School Berlin</strong>
-        </div>
-        <div>
-          Main subject: Mathematics, Physics, German, Economics
-        </div>
-      </article>
-    </section>
-    <section>
+
+    <!-- <section>
       <h3>Experience</h3>
       <article>
         <div class='job-title'>
@@ -561,12 +270,17 @@
           </ul>
         </div>
       </article>
-    </section>
+    </section> -->
   </main>
   <footer>
     <p> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </body>
 </html>
