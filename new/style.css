@@ -2,9 +2,9 @@ body, html {
 	height: 100%;
   }
   
-  .bg { 
-	/* The image used */
-	background-image: url('./img/00008.jpg');
+        
+    .bg { 
+
   
 	/* Full height */
 	height: 100%; 
@@ -50,13 +50,40 @@ header {
 
   padding: 2em;
   text-align: center;
-  background-image: url('./img/greece.jpg');
+  
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   color: white;
+}
+
+.image-box {
+    /* Here's the trick */
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0);
+  
+    /* Basic background styles */
+    background: var(--image-url) center center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Here's the same styles we applied to our content-div earlier */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    
+    /* Add a transition, just for fun */
+    transition: box-shadow .2s ease-out;
+  }
+.image-box:hover {
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
 }
 
 header section {
