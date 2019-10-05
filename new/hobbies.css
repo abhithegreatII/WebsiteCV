@@ -39,16 +39,20 @@
 
 .mobile-image{
   display: block;
+  height: 100vh;
   }
 .desktop-image{
   display: none;
+  height: 100vh;
   }
 @media (min-width:576px){
   .mobile-image{
   display: none;
+
   }
   .desktop-image{
   display: block;
+  
   }
 }
 
