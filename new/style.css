@@ -59,6 +59,25 @@ header {
   color: white;
 }
 
+
+.containers{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text{
+  font-weight: 100;
+  font-size: 28px;
+  color: #FAFAFA;
+}
+.dud{
+  color: #757575;
+}
+
+
+
 .image-box {
     /* Here's the trick */
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0);
@@ -83,7 +102,7 @@ header {
     transition: box-shadow .2s ease-out;
   }
 .image-box:hover {
-    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.4);
 }
 
 header section {

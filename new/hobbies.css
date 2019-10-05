@@ -12,17 +12,74 @@
 }
 
 .carousel {
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: auto;
+    text-align: center;
+
 }
 /* Make the image fully responsive */
 .carousel-inner img {
-    width: 100%;
-    height: 100%;
+    height: auto;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Here's the same styles we applied to our content-div earlier */
+    color: white;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (max-width: 600px) {
-    .carousel-caption{
-        display: none;
-    }
+
+
+.mobile-image{
+  display: block;
+  }
+.desktop-image{
+  display: none;
+  }
+@media (min-width:576px){
+  .mobile-image{
+  display: none;
+  }
+  .desktop-image{
+  display: block;
+  }
 }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .course {
+      display: block;
+    }
+  
+    .course .title, .course .descrition {
+      max-width: 100%;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .skills {
+      display: block;
+    }
+  
+    .skills .column {
+      max-width: 100%;
+    }
+  
+    footer {
+      text-align: center;
+    }
+  }
