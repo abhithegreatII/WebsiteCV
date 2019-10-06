@@ -25,12 +25,16 @@ body {
 }
 
 a {
-  color: #1C9C94;
+  color: #63c0b8;
   text-decoration: none;
 }
 
 a:hover {
   opacity: 0.5;
+}
+
+a:visited {
+  color: #468a84;
 }
 
 article {
@@ -59,6 +63,31 @@ header {
   color: white;
 }
 
+a {
+  text-transform: #509e98;
+  text-decoration: none:
+}
+
+
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: #41807a;
+}
+
+.title a:hover {
+  color: #509e98;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.titletitle a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
 
 .containers{
   height: 100%;
@@ -101,6 +130,7 @@ header {
     /* Add a transition, just for fun */
     transition: box-shadow .2s ease-out;
   }
+
 .image-box:hover {
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.4);
 }
@@ -113,6 +143,10 @@ header section {
 header img {
   border-radius: 50%;
   max-width: 150px;
+}
+
+main section {
+  padding: 5%;
 }
 
 h1 {
@@ -137,8 +171,7 @@ main section:not(:last-child) {
 }
 
 .fab {
-  border: 1px solid white;
-  border-radius: 50%;
+
   font-size: 1.5em;
   width: 1.5em;
   height: 1.5em;
@@ -151,9 +184,8 @@ a .fab {
   color: white;
 }
 
-.far {
-  border: 1px solid white;
-  border-radius: 50%;
+.fas {
+
   font-size: 1.5em;
   width: 1.5em;
   height: 1.5em;
@@ -162,9 +194,51 @@ a .fab {
   text-align: center;
 }
 
-a .far {
+a .fas {
   color: white;
 }
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+  .edu {
+    transition: transform .2s; /* Animation */
+  }
+  .edu:hover{
+    transform: scale(1.1);
+  }
+  
+  .projects {
+    transition: transform .2s; /* Animation */
+  }
+  .projects:hover{
+    transform: scale(1.1);
+  }
+  
+  
+  .miles {
+    transition: transform .2s; /* Animation */
+  }
+  .miles:hover{
+    transform: scale(1.1);
+  }
+  
+  
+  .ski {
+    transition: transform .2s; /* Animation */
+  }
+  .ski:hover{
+    transform: scale(1.1);
+  }
+
+}
+
+
+
 
 .course, .skills {
   display: -ms-flexbox;

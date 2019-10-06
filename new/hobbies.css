@@ -3,23 +3,19 @@
     transform: translateY(-50%);
     text-transform: uppercase;
 }
-.btn {
-    font-size: 18px;
-    color: #FFF;
-    padding: 12px 22px;
-    background: #5e4485;
-    border: 2px solid #FFF;
-}
+
 
 .carousel {
     height: 100%;
     width: auto;
     text-align: center;
+    
 
 }
 /* Make the image fully responsive */
 .carousel-inner img {
     height: auto;
+    filter: brightness(45%);
 
     background-position: center;
     background-repeat: no-repeat;
@@ -34,6 +30,32 @@
     align-items: center;
     justify-content: center;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.fas {
+
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: end;
+  opacity: .8;
+}
+
+a .fas {
+  color: white;
+}
+
+
+
 
 
 
