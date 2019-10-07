@@ -70,6 +70,7 @@ class TextScramble {
   
   const el = document.querySelector('.text')
   const fx = new TextScramble(el)
+
   
   let counter = 0
   const next = () => {
@@ -80,3 +81,14 @@ class TextScramble {
   }
   
   next()
+
+
+
+  // ——————————————————————————————————————————————————
+  // multilanguage
+  // ——————————————————————————————————————————————————
+
+
+  function setLang(lang) {
+    document.getElementsByTagName('html')[0].setAttribute('lang',lang);
+  }

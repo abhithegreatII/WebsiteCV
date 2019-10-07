@@ -25,8 +25,12 @@ body {
 }
 
 
-.en, .de { display:none; } /* hide all elements with a language class */
-.en:lang(en), .de:lang(de) { display:block; } /* show those elements that match their language class */
+.en, .de { display: none; } /* hide all elements with a language class */
+.en:lang(en), .de:lang(de) { display:block;} /* show those elements that match their language class */
+
+.choose:lang(en), .choose:lang(de) {
+  display: none;
+} /* doesnt display choice page when language selected */
 
 a {
   color: #509e98;
@@ -38,7 +42,7 @@ a:hover {
 }
 
 a:visited {
-  color: #468a84;
+  color: #509e98;
 }
 
 article {
@@ -88,10 +92,7 @@ a:visited {
   text-decoration: none;
 }
 
-.titletitle a:hover {
-  opacity: 0.7;
-  text-decoration: none;
-}
+
 
 .containers{
   height: 100%;
@@ -100,19 +101,51 @@ a:visited {
   align-items: center;
   display: flex;
 }
+
 .text{
   font-weight: 100;
   font-size: 28px;
   color: #FAFAFA;
 }
+
 .dud{
   color: #757575;
 }
 
 
+.button{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 7px 20px !important;
+  border-radius: 5px;
+  margin: 0px 0px 0px 20px;
+  background-color: #e7e7e7;
+  border: 3px solid #e7e7e7;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button:hover{
+  background-color: rgba(255,255,255,0);
+  color: white;
+  cursor: pointer;
+ 
+}
+.button:hover a{
+ color: #e7e7e7;
+}
+
+a .button {
+  color: white;
+}
+
 
 .image-box {
-    /* Here's the trick */
+
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0);
   
     /* Basic background styles */
@@ -299,12 +332,24 @@ ul.job-description li:before{
   color: #509e98;
 }
 
+
 footer {
+  width: 100%;
+}
+.foot {
  padding: 1em 1.5em;
  background: #A7B8BF;
  color: white;
- text-align: right;
+ float: right;
 }
+
+.last {
+  padding: 1em 1.5em;
+  background: #A7B8BF;
+  color: white;
+  float: left;
+ }
+ 
 
 @media only screen and (max-width: 768px) {
   .course {
