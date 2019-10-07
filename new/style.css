@@ -24,8 +24,12 @@ body {
   line-height: 1.8em;
 }
 
+
+.en, .de { display:none; } /* hide all elements with a language class */
+.en:lang(en), .de:lang(de) { display:block; } /* show those elements that match their language class */
+
 a {
-  color: #63c0b8;
+  color: #509e98;
   text-decoration: none;
 }
 
