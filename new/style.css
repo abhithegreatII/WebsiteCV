@@ -25,10 +25,10 @@ body {
 }
 
 
-.en, .de { display: none; } /* hide all elements with a language class */
-.en:lang(en), .de:lang(de) { display:block;} /* show those elements that match their language class */
+.en, .de, .infoen, .infode { display: none; } /* hide all elements with a language class */
+.en:lang(en), .de:lang(de), .infoen:lang(infoen), .infode:lang(infode) { display:block;} /* show those elements that match their language class */
 
-.choose:lang(en), .choose:lang(de) {
+.choose:lang(en), .choose:lang(de), .choose:lang(infoen), .choose:lang(infode) {
   display: none;
 } /* doesnt display choice page when language selected */
 
@@ -39,6 +39,7 @@ a {
 
 a:hover {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 a:visited {
@@ -103,6 +104,12 @@ a:visited {
 }
 
 .text{
+  font-weight: 100;
+  font-size: 28px;
+  color: #FAFAFA;
+}
+
+.textde{
   font-weight: 100;
   font-size: 28px;
   color: #FAFAFA;

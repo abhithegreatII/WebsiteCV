@@ -31,6 +31,7 @@
     justify-content: center;
 }
 
+
 a {
   text-decoration: none;
 }
@@ -56,7 +57,44 @@ a .fas {
 
 
 
+.en, .de { display: none; } /* hide all elements with a language class */
+.en:lang(en), .de:lang(de) { display:block;} /* show those elements that match their language class */
 
+.choose:lang(en), .choose:lang(de) {
+  display: none;
+} /* doesnt display choice page when language selected */
+
+
+
+.button{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 7px 20px !important;
+  border-radius: 5px;
+  margin: 0px 0px 0px 20px;
+  background-color: #e7e7e7;
+  border: 3px solid #e7e7e7;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.button:hover{
+  background-color: rgba(255,255,255,0);
+  color: white;
+  cursor: pointer;
+  opacity: 100%;
+}
+.button:hover a{
+ color: white;
+}
+
+p {
+  text-transform: none  ;
+}
 
 
 .mobile-image{

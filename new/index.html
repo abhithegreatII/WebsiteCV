@@ -38,7 +38,7 @@
         </header>
     </div>
 
-    <div class="en de">
+    <div class="en de infoen infode">
         <header class="image-box" style="--image-url: url(./img/megreece.jpg)">
           <div class="main"> 
               <h1>Abhishek Singh</h1>
@@ -51,13 +51,23 @@
                 <a href="https://www.linkedin.com/in/abhisheksb/" target="_blank">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
-                <a href= "hobbies.html" target="_self">
+                <a href= "hobbies.html" onclick="setLang('en')" target="_self">
                   <i class= "fas fa-football-ball"></i>
                 </a>
       
-                <!-- <a href= "info.html" target="_self">
+                <a onclick="setLang('infoen')">
                     <i class= "fas fa-info"></i>
-                </a> -->
+                </a>
+
+              </section>
+              <section class="infoen">
+                <p>Age: 21
+                  Nationality: german
+
+                </p>
+                <a onclick="setLang('en')">
+                  <i class= "fas fa-info"></i>
+                </a>
 
               </section>
 
@@ -74,14 +84,27 @@
                     <i class= "fas fa-football-ball"></i>
                   </a>
         
-                  <!-- <a href= "info.html" target="_self">
-                      <i class= "fas fa-info"></i>
-                  </a> -->
+                  <a onclick="setLang('infode')">
+                    <i class= "fas fa-info"></i>
+                  </a>
                 </section>
 
+                <section class="infode">
+                  <p>Alter: 21
+                    Nationalität: deutsch
+                    
+                  </p>
+                  <a onclick="setLang('de')">
+                    <i class= "fas fa-info"></i>
+                  </a>
+                </section>
+
+
                 <div class="containers">
-                    <div class="text"></div>
+                  <div class="textde en de"></div>
                 </div>
+                
+
           </div>
         </header>
     </div>
@@ -561,11 +584,11 @@
     <footer class="en de last">
         <div class="en">
             <button onclick="setLang('de')" class="button">Deutsch</button>
-            <p class="foot"> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
+            <p class="foot"> <a onclick="setLang('infoen')"> Contact /</a> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
         </div>
         <div class="de">
             <button onclick="setLang('en')" class="button">English</button>
-            <p class="foot"> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
+            <p class="foot"> <a onclick="setLang('infode')"> Kontact /</a> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
         </div>
 
         
@@ -585,6 +608,7 @@ integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0
 integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 <script src="script.js"></script>
+<script src="skript.js"></script>
 
 
 

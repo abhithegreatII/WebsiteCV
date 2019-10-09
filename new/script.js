@@ -67,8 +67,8 @@ class TextScramble {
     'my work,',
     'scroll to see more!'
   ]
-  
-  const el = document.querySelector('.text')
+
+  const el = document.querySelector('.textde')
   const fx = new TextScramble(el)
 
   
@@ -92,3 +92,4 @@ class TextScramble {
   function setLang(lang) {
     document.getElementsByTagName('html')[0].setAttribute('lang',lang);
   }
+
