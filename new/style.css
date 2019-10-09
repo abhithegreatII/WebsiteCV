@@ -86,16 +86,21 @@ p {
 
 
 .en, .de, .infoen, .infode, .hobbies, .hobbys { display: none; } /* hide all elements with a language class */
-.en:lang(en), .de:lang(de), .infoen:lang(infoen), .infode:lang(infode), .hobbies:lang(hobbies), .hobbys:lang(hobbys) { display:block;} /* show those elements that match their language class */
+.en:lang(en), .de:lang(de), .infoen:lang(infoen), .infode:lang(infode), .hobbys:lang(hobbys), .hobbies:lang(hobbies)  { display:block;} /* show those elements that match their language class */
 
-.choose:lang(en), .choose:lang(de), .choose:lang(infoen), .choose:lang(infode), .choose:lang(hobbies), .choose:lang(hobbys) {
+.choose:lang(en), .choose:lang(de), .choose:lang(infoen), .choose:lang(infode), .choose:lang(hobby), .choose:lang(hobbys), .choose:lang(hobbies) {
   display: none;
 } /* doesnt display choice page when language selected */
 
-.hobbys:lang(en), .hobbys:lang(de), .hobbys:lang(hobbies), .hobbys:lang(choose), .hobbys:lang(infoen), .hobbys:lang(infode),
-.hobbies:lang(infoen), .hobbies:lang(infode), .hobbies:lang(hobbys), .hobbies:lang(en), .hobbies:lang(de), .hobbies:lang(choose) {
+.hobby:lang(en), .hobby:lang(de), .hobby:lang(choose), .hobby:lang(infoen), .hobby:lang(infode), .hobbys:lang(hobbies), .hobbies:lang(hobbys) {
   display: none;
-} /* doesnt display choice page when language selected */
+} /* doesnt display hobby page when language selected */
+
+.hobby:lang(hobbies), .hobby:lang(hobbys) {
+  display: block;
+}
+
+
 
 a {
   color: #509e98;
@@ -139,7 +144,7 @@ header {
 
 a {
   text-transform: #509e98;
-  text-decoration: none:
+  text-decoration: none;
 }
 
 
@@ -374,7 +379,7 @@ a .fas {
 }
 
 .skills .column {
-  -ms-flex: 0 0 50%%;
+  -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
 }
@@ -450,9 +455,9 @@ footer {
 
 
 ::-webkit-scrollbar { 
-  display: none;  // Safari and Chrome
-  -ms-overflow-style: none;  // IE 10+
-  scrollbar-width: none;  // Firefox
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 

@@ -92,4 +92,3 @@ class TextScramble {
   function setLang(lang) {
     document.getElementsByTagName('html')[0].setAttribute('lang',lang);
   }
-
