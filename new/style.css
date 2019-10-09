@@ -24,11 +24,76 @@ body {
   line-height: 1.8em;
 }
 
+p {
+  text-transform: none  ;
+}
 
-.en, .de, .infoen, .infode { display: none; } /* hide all elements with a language class */
-.en:lang(en), .de:lang(de), .infoen:lang(infoen), .infode:lang(infode) { display:block;} /* show those elements that match their language class */
 
-.choose:lang(en), .choose:lang(de), .choose:lang(infoen), .choose:lang(infode) {
+
+.carousel-caption {
+  top:50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+
+.carousel {
+  height: 100%;
+  width: auto;
+  text-align: center;
+  
+
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+  height: auto;
+  filter: brightness(45%);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Here's the same styles we applied to our content-div earlier */
+  color: white;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.mobile-image{
+  display: block;
+  height: 100vh;
+  }
+
+.desktop-image{
+  display: none;
+  height: 100vh;
+  }
+@media (min-width:576px){
+  .mobile-image{
+  display: none;
+
+  }
+  .desktop-image{
+  display: block;
+  
+  }
+}
+
+
+.en, .de, .infoen, .infode, .hobbies, .hobbys { display: none; } /* hide all elements with a language class */
+.en:lang(en), .de:lang(de), .infoen:lang(infoen), .infode:lang(infode), .hobbies:lang(hobbies), .hobbys:lang(hobbys) { display:block;} /* show those elements that match their language class */
+
+.choose:lang(en), .choose:lang(de), .choose:lang(infoen), .choose:lang(infode), .choose:lang(hobbies), .choose:lang(hobbys) {
+  display: none;
+} /* doesnt display choice page when language selected */
+
+.hobbys:lang(en), .hobbys:lang(de), .hobbys:lang(hobbies), .hobbys:lang(choose), .hobbys:lang(infoen), .hobbys:lang(infode),
+.hobbies:lang(infoen), .hobbies:lang(infode), .hobbies:lang(hobbys), .hobbies:lang(en), .hobbies:lang(de), .hobbies:lang(choose) {
   display: none;
 } /* doesnt display choice page when language selected */
 
@@ -133,7 +198,7 @@ a:visited {
 
 .button a {
   text-decoration: none;
-  color: #fff;
+  color: black;
 }
 
 .button:hover{
@@ -143,11 +208,11 @@ a:visited {
  
 }
 .button:hover a{
- color: #e7e7e7;
+ color: white;
 }
 
 a .button {
-  color: white;
+  color: black;
 }
 
 
