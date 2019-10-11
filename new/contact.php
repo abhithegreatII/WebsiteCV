@@ -2,7 +2,7 @@
 
 if($_POST["submit"]) {
     $recipient="abhishek013@yahoo.com";
-    $subject="CV to Abhishek";
+    $subject="Response to Abhishek CV";
     $sender=$_POST["sender"];
     $senderEmail=$_POST["senderEmail"];
     $message=$_POST["message"];
