@@ -34,17 +34,22 @@
                 <button onclick="setLang('de')" class="button">Deutsch</button>
 
               </section>
+              <div class="containers">
+                <div class="textde"></div>
+              </div>
           </div>
+
         </header>
     </div>
 
-    <div class="en de infoen infode">
+
+    <div class="en de" id="top">
         <header class="image-box" style="--image-url: url(./img/megreece.jpg)">
           <div class="main"> 
               <h1>Abhishek Singh</h1>
               <section class="en">
-                <p>Hello! I am Abhishek Singh. This is me getting my hands into Web- Design. I bring my high motivation and curiosity to every new field that I embark on.</p>
-                <p>I am eager to acquire a deeper understanding in various fields and want to open new perspectives.</p>
+                <p>Hello! I am Abhishek Singh. I bring my high motivation and curiosity to every new field that I embark on.</p>
+                <p>I am eager to acquire a deeper understanding in various fields and hence open new perspectives.</p>
                 <a href="https://github.com/abhithegreatII" target="_blank">
                   <i class="fab fa-github-alt"></i>
                 </a>
@@ -60,12 +65,21 @@
                     <i class= "fas fa-info"></i>
                 </a>
 
+                <div class="mouse-icon en de">
+
+                  <div class="wheel"></div>
+
+                </div>
+
               </section>
               <section class="infoen">
-                <p>Age: 21
-                  Nationality: german
+                <p>Age: 21</p>
+                <p>Nationality: german</p>
+                <p>Place of Birth: India, Aligarh- UP</p>
+                <p></p>
+                <p></p>
+                <p></p>
 
-                </p>
                 <a onclick="setLang('en')">
                   <i class= "fas fa-home"></i>
                 </a>
@@ -73,8 +87,8 @@
               </section>
 
               <section class="de">
-                  <p>Hallo! Ich bin Abhishek Singh. This is me getting my hands into Web- Design. I bring my high motivation and curiosity to every new field that I embark on.</p>
-                  <p>I am eager to acquire a deeper understanding in various fields and want to open new perspectives.</p>
+                  <p>Hallo! Ich bin Abhishek Singh. Meine hohe Motivation und Neugier bringe ich immer mit mir.</p>
+                  <p>Ich möchte Disziplinen meiner Interesse erweitern und ein tieferes Verständnis, mit Anwendungen, erwerben.</p>
                   <a href="https://github.com/abhithegreatII" target="_blank">
                     <i class="fab fa-github-alt"></i>
                   </a>
@@ -89,28 +103,106 @@
                   <a onclick="setLang('infode')">
                     <i class= "fas fa-info"></i>
                   </a>
+
+                  <div class="mouse-icon en de">
+
+                    <div class="wheel"></div>
+  
+                  </div>
                 </section>
 
                 <section class="infode">
-                  <p>Alter: 21
-                    Nationalität: deutsch
-                    
-                  </p>
+                  <p>Alter: 21</p>
+                  <p>Nationalität: deutsch</p>
+                  <p>Geburtsort: Indien, Aligarh- UP</p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+
                   <a onclick="setLang('de')">
                     <i class= "fas fa-home"></i>
                   </a>
                 </section>
 
 
-                <div class="containers">
-                  <div class="textde en de"></div>
-                </div>
+
+                
+
                 
 
           </div>
         </header>
     </div>
 
+    <div class="infoen">
+      <header class="image-box" style="--image-url: url(./img/mapdesktop1.png)">
+        <div class="main">
+            <section class="infoen">
+                <h4>don't be a stranger!</h4>
+
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <form method="post" action="contact.php">
+                  <section>
+
+                    <input name="sender" placeholder="Your Name">
+                  </section>
+                  <section>
+
+                    <input name="senderEmail" placeholder="Your Email">
+                  </section>
+            
+
+            
+
+                    <textarea rows="5" cols="20" name="message" placeholder="Enter Message"></textarea>
+                  </section>
+
+                  <input type="submit" name="submit" value="Send">
+
+
+                </form>
+
+                <a onclick="setLang('en')">
+                  <i class= "fas fa-home"></i>
+                </a>
+
+            </section> 
+          </div>
+        </header>
+    </div>
+    <div class="infode">
+      <header class="image-box" style="--image-url: url(./img/mappedesktop.png)">
+        <div class="main">
+            <section class="infode">
+              <h4>don't be a stranger!</h4>
+
+              <p></p>
+              <p></p>
+              <p></p>
+
+              <form method="post" action="contact.php">
+                <section>
+
+                  <input name="sender" placeholder="Dein Name">
+                </section>
+                <section>
+
+                  <input name="senderEmail" placeholder="Deine Email">
+                </section>
+                  <textarea rows="5" cols="20" name="message" placeholder="Nachricht eingeben"></textarea>
+                </section>
+
+                <input type="submit" name="submit" value="Send">
+
+
+              </form>
+            </section>
+          </div>
+        </header>
+    </div>
 
 
     <div class="hobby">
@@ -237,9 +329,6 @@
         </div>
 
     </div>
-
-
-
 
 
     <main class="en">
@@ -478,7 +567,6 @@
       </section> -->
     </main>
 
-
     <main class="de">
         <section class="edu">
             <h3>Bildung</h3>
@@ -713,6 +801,7 @@
         </article>
       </section> -->
     </main>
+
 
     <footer class="en de last">
         <div class="en">
