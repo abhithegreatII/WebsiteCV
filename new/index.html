@@ -27,7 +27,7 @@
 
     <div class="choose">
         <header class="image-box" style="--image-url: url(./img/megreece.jpg)">
-          <div class="main"> 
+          <div class="main myinfo"> 
               <h1>Abhishek Singh</h1>
               <section>
                 <button onclick="setLang('en')" class="button">English</button>
@@ -46,32 +46,34 @@
     <div class="en de" id="top">
         <header class="image-box" style="--image-url: url(./img/megreece.jpg)">
           <div class="main"> 
-              <h1>Abhishek Singh</h1>
-              <section class="en">
+              <h1 class="myinfo">Abhishek Singh</h1>
+              <section class="en myinfo">
                 <p>Hello! I am Abhishek Singh. I bring my high motivation and curiosity to every new field that I embark on.</p>
                 <p>I am eager to acquire a deeper understanding in various fields and hence open new perspectives.</p>
-                <a href="https://github.com/abhithegreatII" target="_blank">
+                <a href="https://github.com/abhithegreatII" target="_blank" title="GitHub">
                   <i class="fab fa-github-alt"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/abhisheksb/" target="_blank">
+                <a href="https://www.linkedin.com/in/abhisheksb/" target="_blank" title="LinkedIn">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
 
-                <a onclick="setLang('hobbies')">
+                <a onclick="setLang('hobbies')" title="Hobbies">
                     <i class= "fas fa-football-ball"></i>
                 </a>
       
-                <a onclick="setLang('infoen')">
+                <a onclick="setLang('infoen')" title="Info">
                     <i class= "fas fa-info"></i>
                 </a>
 
-                <div class="mouse-icon en de">
 
-                  <div class="wheel"></div>
-
-                </div>
 
               </section>
+
+              <div class="mouse-icon en de">
+
+                <div class="wheel"></div>
+
+              </div>
               <section class="infoen">
                 <p>Age: 21</p>
                 <p>Nationality: german</p>
@@ -86,29 +88,25 @@
 
               </section>
 
-              <section class="de">
+              <section class="de myinfo">
                   <p>Hallo! Ich bin Abhishek Singh. Meine hohe Motivation und Neugier bringe ich immer mit mir.</p>
-                  <p>Ich möchte Disziplinen meiner Interesse erweitern und ein tieferes Verständnis, mit Anwendungen, erwerben.</p>
-                  <a href="https://github.com/abhithegreatII" target="_blank">
+                  <p>Ich möchte Disziplinen meiner Interesse erweitern und ein tieferes Verständnis, durch Anwendung, erwerben.</p>
+                  <a href="https://github.com/abhithegreatII" target="_blank" title="GitHub">
                     <i class="fab fa-github-alt"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/abhisheksb/" target="_blank">
+                  <a href="https://www.linkedin.com/in/abhisheksb/" target="_blank" title="LinkedIn">
                     <i class="fab fa-linkedin-in"></i>
                   </a>
 
-                  <a onclick="setLang('hobbys')">
+                  <a onclick="setLang('hobbys')" title="Hobbys">
                       <i class= "fas fa-football-ball"></i>
                   </a>
         
-                  <a onclick="setLang('infode')">
+                  <a onclick="setLang('infode')" title="Info">
                     <i class= "fas fa-info"></i>
                   </a>
 
-                  <div class="mouse-icon en de">
 
-                    <div class="wheel"></div>
-  
-                  </div>
                 </section>
 
                 <section class="infode">
@@ -144,7 +142,7 @@
                 <p></p>
                 <p></p>
 
-                <form method="post" action="contact.php">
+                <form method="post" action="contact.php" target="_blank">
                   <section>
 
                     <input name="sender" placeholder="Your Name">
@@ -157,7 +155,7 @@
 
             
 
-                    <textarea rows="7" cols="37" name="message" placeholder="Enter Message"></textarea>
+                    <textarea rows="7" cols="37" name="message" placeholder="Enter Message" required></textarea>
                   </section>
 
                   <input type="submit" name="submit" value="Send">
@@ -183,7 +181,7 @@
               <p></p>
               <p></p>
 
-              <form method="post" action="contact.php">
+              <form method="post" action="contact.php" target="_blank">
                 <section>
 
                   <input name="sender" placeholder="Dein Name">
@@ -192,7 +190,7 @@
 
                   <input name="senderEmail" placeholder="Deine Email" required type="email">
                 </section>
-                  <textarea rows="7" cols="37" name="message" placeholder="Nachricht eingeben"></textarea>
+                  <textarea rows="7" cols="37" name="message" placeholder="Nachricht eingeben" required></textarea>
                 </section>
 
                 <input type="submit" name="submit" value="Abschicken">
@@ -597,43 +595,50 @@
             <h3>Programmier Projekte</h3>
             <article class='course'>
               <div class='title'>
-                <h4><a href="https://github.com/abhithegreatII" target="_blank">case study: Product Recall</a></h4>
+                <h4><a href="https://github.com/abhithegreatII" target="_blank">Fallstudie: Rückrufaktion von defekten Fahrzeugen</a></h4>
               </div>
               <div class="descrition">
-                <p><!--Given a ...-->Given was dirty data of components, individual parts and location of faulty vehicles from a car company. The data
-                  was cleaned, analyzed and then visualized via a shiny.js application.
+                <p>Gegeben waren unstrukturierte Datensätze die Daten zu Fahrzeugen, deren Einzelteile, Komponenten und Aufenthalt enthielten.
+                  Die Datensätze wurden mit Tidy gecleaned, und analysiert(finding what we need), und mittels shiny.js in einer selbst gemachten app dargestellt.
+
                 </p>
               </div>
             </article>
             <article class='course'>
               <div class='title'>
-                <h4><a href="https://github.com/abhithegreatII" target="_blank">self- balancing binary tree</a></h4>
+                <h4><a href="https://github.com/abhithegreatII" target="_blank">selbst- organisierender binär Baum</a></h4>
               </div>
               <div class="descrition">
-                <p>A splay tree was visualized where nodes could be inserted, deleted and searched for. After any operation, the tree would balanced with according rotations of sub-trees and was vizualized via Tkinter GUI.</p>
+                <p>Ich habe in eine Tkinter GUI erstellt und darin einen Splay Baum visualiziert. Im Splaybaum können beliebig viele Knoten eingefügt werden, bzw. auch gelöscht und gesucht werden.
+                Nach jeder Operation werden die Teilbäume rotiert und damit neu balanciert.
+                </p>
               </div>
             </article>
             <article class='course'>
               <div class='title'>
-                <h4><a href="https://github.com/abhithegreatII" target="_blank">case study: Reliability Engineering</a></h4>
+                <h4><a href="https://github.com/abhithegreatII" target="_blank">Fallstudie: Zuverlässigkeitstechnik</a></h4>
               </div>
               <div class="descrition">
-                <p>Using a robotic-arm, various materials were tested, and data was collected. From here, the data was used to predict the probability of failure of untested materials with the use of regression curves.</p>
+                <p> Ein Roboterarm wurde benutzt um Biegeversuche von verschiedenen Materialien durchzuführen und die dazugehörigen Daten wurde erfasst.
+                  Die Wahrscheinlichkeit dass nicht getestete Materialien nach einer bestimmten Anzahl von Biegungen Ausfallen, wurde mit Regression geschätzt und in einer shiny.js App dargestellt und analysiert.
+                </p>
               </div>
             </article>
             <article class='course'>
               <div class='title'>
-                <h4><a href="https://github.com/abhithegreatII/Fastest-Route-Labyrinth---Python" target="_blank">labyrinth: Shortest Path</a></h4>
+                <h4><a href="https://github.com/abhithegreatII/Fastest-Route-Labyrinth---Python" target="_blank">Labyrinth: kürzeste Wege</a></h4>
               </div>
               <div class="descrition">
-                <p>Find the fastest route from any point in the labyrinth to another. Used the method of Breadth First Search to find all possible routes and their according distances.  </p>
+                <p>Um den kurzesten Pfad von einem Punkt zu einem beliebig gewählten Endpunkt im Labyrinth zu finden wurde eine binäre breiten Suche implementiert. 
+                  Diese findet alle möglichen Wege zum Endpunkt und deren Distanz vom Startpunkt.
+                </p>
               </div>
             </article>
           </section>
       <section class="miles"> 
         <div class="container">
             <div class="page-header">
-                <h3>Milestones</h3>
+                <h3>Meilensteine</h3>
             </div>
             <ul class="timeline">
   
@@ -645,7 +650,7 @@
                         
                       </div>
                       <div class="timeline-body">
-                        <p>Volunteer for Event Organization at the WeAreDevelopers World Congress in Berlin</p>
+                        <p>Event Organisieren | WeAreDevelopers World Congress in Berlin</p>
                         <hr>
                         <div class="btn-group">
                           <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
@@ -732,7 +737,7 @@
                       <h4 class="timeline-title">2013</h4>
                     </div>
                     <div class="timeline-body">
-                      <p>Betriebspraktikum| Strato AG </p>
+                      <p>Betriebspraktikum | Strato AG </p>
                     </div>
                   </div>
                 </li>
@@ -742,7 +747,7 @@
                       <h4 class="timeline-title">2010</h4>
                     </div>
                     <div class="timeline-body">
-                      <p> Work for Peace bei Young African Art Market</p>
+                      <p> Work for Peace beim Young African Art Market</p>
                     </div>
                   </div>
                 </li>
@@ -769,7 +774,7 @@
             <h4>Programmieren</h4>
             <ul>
               <li>Python</li>
-              <li>R Programming</li>
+              <li>R Programmierung</li>
               <li>SQL</li>
               <li>HTML5/ CSS3</li>
               <li>Matlab</li>
@@ -778,10 +783,10 @@
   
           <div class ="column">
             <h4>Sprachen</h4>
-            <p>🇬🇧 Englisch - Proficient C1/C2</p>
-            <p>🇫🇷 Deutsch - Proficient C1/C2</p>
-            <p>🇫🇷 Hindi - Proficient C1/C2</p>
-            <p>🇪🇸 Spanisch - Intermediate - B2</p>
+            <p>🇬🇧 Englisch</p>
+            <p>🇫🇷 Deutsch</p>
+            <p>🇫🇷 Hindi</p>
+            <p>🇪🇸 Spanisch</p>
           </div>
         </div>
       </section>
@@ -808,11 +813,11 @@
 
     <footer class="en de last">
         <div class="en">
-            <button onclick="setLang('de')" class="button">Deutsch</button>
+            <button onclick="setLang('de'); topFunction()" id="myBtn" class="button">Deutsch</button>
             <p class="foot"> <a onclick="setLang('infoen')"> Contact /</a> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
         </div>
         <div class="de">
-            <button onclick="setLang('en')" class="button">English</button>
+            <button onclick="setLang('en'); topFunction()" id="myBtn" class="button">English</button>
             <p class="foot"> <a onclick="setLang('infode')"> Kontakt /</a> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
         </div>
 

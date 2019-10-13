@@ -542,6 +542,14 @@ a .fas {
 
 }
 
+.myinfo {
+  transition: transform .2s;
+}
+
+.myinfo:hover {
+  transform: scale(1.1);
+}
+
 
 
 
