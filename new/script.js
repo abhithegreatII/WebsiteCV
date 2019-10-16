@@ -62,10 +62,14 @@ class TextScramble {
   
   const phrases = [
     'On this website you\'ll find,',
+    'Auf dieser Website finden Sie,',
     'my hobbies,',
-    'my timeline,',
-    'my work,',
-    'scroll to see more!'
+    'meine Hobbys,',
+    'my Timeline,',
+    'meine Zeitleiste,',
+    'Infos,',
+    'scroll to see more!',
+    'scrollen um mehr zu sehen!',
   ]
 
   const el = document.querySelector('.textde')
@@ -105,4 +109,14 @@ mybutton = document.getElementById("myBtn");
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-} 
+}
+
+
+// <input type="submit" class="csubmit" value="Now !" name="get" onClick="clearform();" />
+
+function clearform()
+{
+    document.getElementById("name").value=""; //don't forget to set the textbox ID
+    document.getElementById("message").value=""; //don't forget to set the textbox ID
+    document.getElementById("code").value=""; //don't forget to set the textbox ID
+}

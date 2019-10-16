@@ -344,6 +344,10 @@ header section {
   max-width: 640px;
 }
 
+.progress {
+  width: 90%;
+}
+
 header img {
   border-radius: 50%;
   max-width: 150px;

@@ -11,7 +11,12 @@ if($_POST["submit"]) {
 
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-    $thankYou="<p>Thank you! Your message has been sent.</p>";
+    if(mail($recipient, $subject, $message, $sender))
+    {
+        echo "<script>alert('Mail was sent !');</script>";
+        echo "<script>document.location.href='contact.php'</script>";
+    }
+
 }
 
 ?>
