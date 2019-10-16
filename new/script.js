@@ -68,8 +68,8 @@ class TextScramble {
     'my Timeline,',
     'meine Zeitleiste,',
     'Infos,',
-    'scroll to see more!',
-    'scrollen um mehr zu sehen!',
+    'pick a language to see more!',
+    'um mehr zu sehen, bitte Sprache wählen!',
   ]
 
   const el = document.querySelector('.textde')
@@ -101,9 +101,6 @@ class TextScramble {
 
   //Get the button:
 mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
