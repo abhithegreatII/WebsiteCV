@@ -107,13 +107,3 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-
-// <input type="submit" class="csubmit" value="Now !" name="get" onClick="clearform();" />
-
-function clearform()
-{
-    document.getElementById("name").value=""; //don't forget to set the textbox ID
-    document.getElementById("message").value=""; //don't forget to set the textbox ID
-    document.getElementById("code").value=""; //don't forget to set the textbox ID
-}

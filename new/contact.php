@@ -11,10 +11,10 @@ if($_POST["submit"]) {
 
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-    if(mail($recipient, $subject, $message, $sender))
+    if(mail($recipient, $subject, $mailBody, $sender))
     {
         echo "<script>alert('Mail was sent !');</script>";
-        echo "<script>document.location.href='contact.php'</script>";
+        echo "<script>document.location.href='index.html'</script>";
     }
 
 }
