@@ -28,7 +28,16 @@ p {
   text-transform: none  ;
 }
 
+p a {
+  text-transform: none;
+  color: white;
+}
 
+p a:hover {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+}
 
 .carousel-caption {
   top:50%;
@@ -239,6 +248,22 @@ a:active {
 
 a:visited {
   color: #41807a;
+}
+
+h3 a {
+  text-decoration: none;
+  color: black;
+}
+
+h3 a:hover {
+  color: black;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+h4 a {
+  color: #509e98;
+  text-decoration: none;
 }
 
 h4 a:hover {
@@ -611,10 +636,15 @@ footer {
   width: 100%;
 }
 .foot {
- padding: 1em 1.5em;
- background: #A7B8BF;
- color: white;
- float: right;
+  transition: transform .2s;
+  padding: 1em 1.5em;
+  background: #A7B8BF;
+  color: white;
+  float: right;
+}
+
+.foot:hover {
+  transform: scale(1.2);
 }
 
 .last {
