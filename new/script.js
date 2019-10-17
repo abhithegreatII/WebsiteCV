@@ -107,3 +107,18 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
+$(document).keydown(function(e) {
+  if (e.keyCode === 37) {
+     // Previous
+     $(".carousel-control.left").click();
+     return false;
+  }
+  if (e.keyCode === 39) {
+     // Next
+     $(".carousel-control.right").click();
+     return false;
+  }
+});
