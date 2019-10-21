@@ -537,14 +537,14 @@ a .fas {
     transition: transform .2s; /* Animation */
   }
   .edu:hover{
-    transform: scale(1.1);
+    transform: translateX(40px);
   }
   
   .projects {
     transition: transform .2s; /* Animation */
   }
   .projects:hover{
-    transform: scale(1.1);
+    transform: translateX(40px);
   }
   
   
@@ -552,7 +552,7 @@ a .fas {
     transition: transform .2s; /* Animation */
   }
   .miles:hover{
-    transform: scale(1.1);
+    transform: translateX(40px);
   }
   
   
@@ -560,7 +560,15 @@ a .fas {
     transition: transform .2s; /* Animation */
   }
   .ski:hover{
-    transform: scale(1.1);
+    transform: translateX(40px);
+  }
+
+  .descrition {
+    transition: transform .2s;
+  }
+
+  .descrition:hover {
+    transform: scale(1.03);
   }
 
 }
