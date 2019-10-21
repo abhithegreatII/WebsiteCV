@@ -4,7 +4,7 @@
 
   <meta charset="UTF-8">
   <title>CV - Abhishek</title>
-  <meta name="description" content="simple CV example created with HTML and CSS">
+  <meta name="description" content="Abhishek Singh's CV">
   <link rel="icon" href="./img/favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -33,8 +33,8 @@
           <div class="main myinfo"> 
               <h1>Abhishek Singh</h1>
               <section>
-                <button onclick="setLang('en')" class="button">English</button>
-                <button onclick="setLang('de')" class="button">Deutsch</button>
+                <button onclick="checkurl('en'); checkurl('en')" class="button" id="en">English</button>
+                <button onclick="setLang('de'); checkurl('de')" class="button" id="de">Deutsch</button>
 
               </section>
               <div class="containers">
@@ -50,14 +50,14 @@
         <header class="image-box" style="--image-url: url(./img/megreece.jpg)">
           <div class="main"> 
               <h1 class="myinfo">Abhishek Singh</h1>
-              <section class="en myinfo">
+              <section class="en myinfo" id="/home/en">
                 <p>Hello! I bring my high motivation and curiosity to every new field that I embark on.</p>
                 <p>I am eager to acquire a deeper understanding in various disciplines and open new perspectives.</p>
                 <p></p>
-                <a onclick="setLang('infoen')" title="Info">
+                <a onclick="setLang('infoen'); checkurl('infoen')" title="Info">
                   <i class= "fas fa-info"></i>
                 </a>
-                <a onclick="setLang('hobbies')" title="Hobbies">
+                <a onclick="setLang('hobbies'); checkurl('hobbies')" title="Hobbies">
                     <i class= "fas fa-football-ball"></i>
                 </a>
                 <br>
@@ -79,7 +79,7 @@
                 <p></p>
                 <p></p>
 
-                <a onclick="setLang('en')">
+                <a onclick="setLang('en'); checkurl('en')">
                   <i class= "fas fa-home"></i>
                 </a>
 
@@ -90,10 +90,10 @@
               <section class="de myinfo">
                   <p>Hallo! Meine hohe Motivation und Neugier bringe ich immer mit.</p>
                   <p>Ich möchte Disziplinen meiner Interesse erweitern und, durch Anwendung, ein tieferes Verständnis dafür erwerben.</p>
-                  <a onclick="setLang('infode')" title="Info">
+                  <a onclick="setLang('infode'); checkurl('infode')" title="Info">
                     <i class= "fas fa-info"></i>
                   </a>
-                  <a onclick="setLang('hobbys')" title="Hobbys">
+                  <a onclick="setLang('hobbys'); checkurl('hobbys')" title="Hobbys">
                       <i class= "fas fa-football-ball"></i>
                   </a>
                   <br>
@@ -110,7 +110,7 @@
                   <p></p>
                   <p></p>
 
-                  <a onclick="setLang('de')">
+                  <a onclick="setLang('de'); checkurl('de')">
                     <i class= "fas fa-home"></i>
                   </a>
                 </section>
@@ -118,7 +118,7 @@
         </header>
     </div>
 
-    <div class="infoen">
+    <div class="infoen" id="infoen">
       <header class="image-box" style="--image-url: url(./img/mapdesktop1.png)">
         <div class="main">
             <section class="infoen">
@@ -149,7 +149,7 @@
 
                 </form>
 
-                <a onclick="setLang('en')">
+                <a onclick="setLang('en'); checkurl('en')">
                   <i class= "fas fa-home"></i>
                 </a>
 
@@ -157,7 +157,7 @@
           </div>
         </header>
     </div>
-    <div class="infode">
+    <div class="infode" id="infode">
       <header class="image-box" style="--image-url: url(./img/mappedesktop.png)">
         <div class="main">
             <section class="infode">
@@ -183,7 +183,7 @@
 
 
               </form>
-              <a onclick="setLang('de')">
+              <a onclick="setLang('de'); checkurl('de')">
                 <i class= "fas fa-home"></i>
               </a>
             </section>
@@ -216,7 +216,7 @@
                     <div class="carousel-caption hobbies">
                       <h3>Bhangra</h3>
                       <p>Professional dancer of a traditional Indian dance form, Bhangra! We have performed various times on big stages.</p>
-                      <a onclick="setLang('en')">
+                      <a onclick="setLang('en'); checkurl('en')">
                           <i class= "fas fa-home"></i>
                       </a>
                     </div>
@@ -224,7 +224,7 @@
                     <div class="carousel-caption hobbys">
                       <h3>Bhangra</h3>
                       <p>Professioneller Tänzer für einen traditionellen Indischen Volkstanz, Bhangra! Wir treten regelmäßig auf großen Bühnen auf.</p>
-                      <a onclick="setLang('de')">
+                      <a onclick="setLang('de'); checkurl('de')">
                           <i class= "fas fa-home"></i>
                       </a>
                     </div>
@@ -243,7 +243,7 @@
                     <div class="carousel-caption hobbies">
                        <h3>Badminton</h3>
                       <p>I have actively participated in various sports such as Taekwondo, Skateboarding, Cricket and Badminton.</p>
-                      <a onclick="setLang('en')">
+                      <a onclick="setLang('en'); checkurl('en')">
                           <i class= "fas fa-home"></i>
                       </a>
                     </div> 
@@ -251,7 +251,7 @@
                     <div class="carousel-caption hobbys">
                       <h3>Badminton</h3>
                      <p>Ich habe aktiv an verschiedenen Sportarten wie Taekwondo, Skateboarden, Cricket und Badminton teilgenommen.</p>
-                     <a onclick="setLang('de')">
+                     <a onclick="setLang('de'); checkurl('de')">
                          <i class= "fas fa-home"></i>
                      </a>
                    </div>
@@ -276,7 +276,7 @@
                         </a>
                       </div>
                       <div>
-                          <a onclick="setLang('en'); setsubLang('hobbies')">
+                          <a onclick="setLang('en'); checkurl('en')">
                               <i class= "fas fa-home"></i>
                           </a>
                       </div>
@@ -291,7 +291,7 @@
                         </a>
                       </div>
                       <div>
-                          <a onclick="setLang('en'); setsubLang('hobbies')">
+                          <a onclick="setLang('de'); checkurl('de')">
                               <i class= "fas fa-home"></i>
                           </a>
                       </div>
@@ -506,7 +506,7 @@
       </section>    
   
       <section class="ski">
-        <h3><a onclick="setLang('hobbies')"> Skills</a></h3>
+        <h3><a onclick="setLang('hobbies'); checkurl('hobbies')"> Skills</a></h3>
         <hr>
         <div class='skills'>
           <div class ="column">
@@ -800,7 +800,7 @@
       </section>    
   
       <section class="ski">
-        <h3><a onclick="setLang('hobbys')">Kenntnisse</a></h3>
+        <h3><a onclick="setLang('hobbys'); checkurl('hobbys')">Kenntnisse</a></h3>
         <hr>
         <div class='skills'>
           <div class='column'>
@@ -879,12 +879,12 @@
 
     <footer class="en de last">
         <div class="en">
-            <button onclick="setLang('de'); topFunction()" id="myBtn" class="button">Deutsch</button>
-            <p class="foot"> <a onclick="setLang('infoen')"> Contact /</a> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
+            <button onclick="setLang('de'); topFunction(); checkurl('de')" id="myBtn" class="button">Deutsch</button>
+            <p class="foot"> <a onclick="setLang('infoen'); checkurl('infoen')"> Contact /</a> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
         </div>
         <div class="de">
-            <button onclick="setLang('en'); topFunction()" id="myBtn" class="button">English</button>
-            <p class="foot"> <a onclick="setLang('infode')"> Kontakt /</a> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
+            <button onclick="setLang('en'); topFunction(); checkurl('en')" id="myBtn" class="button">English</button>
+            <p class="foot"> <a onclick="setLang('infode'); checkurl('infode')"> Kontakt /</a> <a href="https://www.linkedin.com/in/abhisheksb/">LinkedIn</a> / 2019 </p>
         </div>
     </footer>
   </body>

@@ -97,6 +97,62 @@ class TextScramble {
     document.getElementsByTagName('html')[0].setAttribute('lang',lang);
   }
 
+  // window.onhashchange = setLang(string(lang));
+
+  function checkurl(lang) {
+    if (lang == "infode") {
+      topFunction();
+      window.location.hash = 'infode';
+      setLang("infode");
+    } else if (lang == "de") {
+      topFunction();
+      window.location.hash = 'de';
+      setLang("de");
+    } else if (lang == "en") {
+      topFunction();
+      window.location.hash = 'en';
+      setLang("en");
+    } else if (lang == "infoen") {
+      window.location.hash = 'infoen';
+      setLang("infoen");
+    } else if (lang == "hobbys") {
+      window.location.hash = 'hobbys';
+      setLang("hobbys");
+    } else if (lang == "hobbies") {
+      window.location.hash = 'hobbies';
+      setLang("hobbies");
+    } else if (lang == "choose") {
+      window.location.hash = 'home';
+      setLang("choose");
+  
+    }
+  }
+
+  var current_hash = window.location.hash;
+
+
+
+  function check_hash() {
+  
+      if ( window.location.hash != current_hash ) {
+  
+          current_hash = window.location.hash;
+          checkurl(current_hash.substr( 1,  current_hash.length));
+          page_change( current_hash.substr( 1,  current_hash.length) );
+  
+      }
+  
+  }
+  hashCheck = setInterval( "check_hash()", 50 );  
+
+
+
+  
+
+
+
+
+
 
 
   //Get the button:
