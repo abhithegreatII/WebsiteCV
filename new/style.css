@@ -419,6 +419,7 @@ a .fab {
   line-height: 1.5em;
   margin: 5px;
   text-align: center;
+  transition: transform .2s;
 }
 
 a .fas {
@@ -533,34 +534,76 @@ a .fas {
 
 @media only screen and (min-width: 768px) {
 
+  h3 {
+    transition: transform .2s;
+  }
+
   .edu {
     transition: transform .2s; /* Animation */
   }
-  .edu:hover{
-    transform: translateX(40px);
+  .edu:hover h3{
+    transform: translateX(-20px);
+  }
+
+  .moveright {
+    transition: transform .2s;
+  }
+  .edu:hover .moveright{
+    transform: translateX(20px);
   }
   
   .projects {
     transition: transform .2s; /* Animation */
   }
-  .projects:hover{
-    transform: translateX(40px);
+  .projects:hover h3 {
+    transform: translateX(-20px);
   }
+
+  .projects:hover .descrition {
+    transform: translateX(20px);
+  }
+
+
   
   
   .miles {
     transition: transform .2s; /* Animation */
   }
-  .miles:hover{
-    transform: translateX(40px);
+  .miles:hover h3 {
+    transform: translateX(-20px);
   }
-  
+  .timeline-inverted {
+    transition: transform .2s;
+  }
+  .miles:hover .timeline-inverted {
+    transform: translateX(20px);
+  }
+  .uninverted {
+    transition: transform .2s;
+  }
+  .miles:hover .uninverted {
+    transform: translateX(-20px);
+  }
   
   .ski {
     transition: transform .2s; /* Animation */
   }
-  .ski:hover{
-    transform: translateX(40px);
+  .ski:hover h3{
+    transform: translateX(-20px);
+  }
+
+  .left {
+    transition: transform .2s;
+  }
+  .ski:hover .left{
+    transform: translateX(-10px);
+  }
+
+  .right {
+    transition: transform .2s;
+  }
+  .ski:hover .right{
+    transform: translateX(10px);
   }
 
   .descrition {
@@ -577,8 +620,8 @@ a .fas {
   transition: transform .2s;
 }
 
-.myinfo:hover {
-  transform: scale(1.1);
+.myinfo:hover .fas{
+  transform: scale(1.3);
 }
 
 

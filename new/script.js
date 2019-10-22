@@ -146,15 +146,6 @@ class TextScramble {
   hashCheck = setInterval( "check_hash()", 50 );  
 
 
-
-  
-
-
-
-
-
-
-
   //Get the button:
 mybutton = document.getElementById("myBtn");
 
