@@ -532,7 +532,7 @@ a .fas {
 
 
 
-@media only screen and (min-width: 768px) {
+
 
   h3 {
     transition: transform .2s;
@@ -614,7 +614,6 @@ a .fas {
     transform: scale(1.03);
   }
 
-}
 
 .myinfo {
   transition: transform .2s;
